@@ -1,12 +1,16 @@
-// var url = 'http://mylogger.io/log';
+console.log(__filename);
+console.log(__dirname);
 
-// function log (message) {
-//     console.log(message);
-// }
 
-// module.exports = log;
+var url = 'http://mylogger.io/log';
 
-var myArgs = process.argv.slice(2);
+function log (message) {
+    // Send HTTP request
+    console.log(message);
+}
 
-console.log('my args: ', myArgs);
+module.exports.logz = log;
+module.exports.urlz = url;
+
+//console.log(module);
 

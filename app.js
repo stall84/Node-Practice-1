@@ -1,10 +1,6 @@
+const Square = require('./square');
 
-const fs = require('fs');
+const fiveSquare = new Square(5);
 
-const files = fs.readdirSync('./');
-
-console.log(files);
-
-
-
+console.log(`The area of fiveSquare is: ${fiveSquare.area()}`);
 
