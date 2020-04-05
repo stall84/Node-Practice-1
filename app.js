@@ -1,6 +1,5 @@
-const Square = require('./square');
+const osCheck = require('./os-checker');
 
-const fiveSquare = new Square(5);
+osCheck();
 
-console.log(`The area of fiveSquare is: ${fiveSquare.area()}`);
 
